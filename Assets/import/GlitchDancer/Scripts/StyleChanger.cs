@@ -44,8 +44,8 @@ namespace GlitchDancer
             if (!_modified) return;
 
             // Triad hue set.
-            var hue1 = (_hue + 0.113f) % 1;
-            var hue2 = (_hue + 0.380f) % 1;
+            var hue1 = (_hue + 0.5f) % 1;
+            var hue2 = (_hue + 0.9f) % 1;
             var hue3 = (_hue + 0.750f) % 1;
 
             // Update material colors.
@@ -55,10 +55,10 @@ namespace GlitchDancer
                 Camera.main.backgroundColor = Color.HSVToRGB(hue1, 0.96f, 0.95f);
 
                 foreach (var renderer in _bgObjects)
-                    renderer.material.color = Color.HSVToRGB(hue2, 0.95f, 0.2f);
+                    renderer.material.color = Color.HSVToRGB(hue2, 0.95f, 0.95f);
 
                 foreach (var renderer in _fgObjects)
-                    renderer.material.color = Color.HSVToRGB(hue2, 0.9f, 0.5f);
+                    renderer.material.color = Color.HSVToRGB(hue2, 0.9f, 0.9f);
 
                 foreach (var renderer in _effects)
                     renderer.material.SetFloat("_BaseHue", hue3);
