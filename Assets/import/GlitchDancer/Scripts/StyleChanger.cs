@@ -44,8 +44,8 @@ namespace GlitchDancer
             if (!_modified) return;
 
             // Triad hue set.
-            var hue1 = (_hue + 0.5f) % 1;
-            var hue2 = (_hue + 0.9f) % 1;
+            var hue1 = (_hue + 0.1f) % 1;
+            var hue2 = (_hue + 0.5f) % 1;
             var hue3 = (_hue + 0.750f) % 1;
 
             // Update material colors.
@@ -66,7 +66,7 @@ namespace GlitchDancer
             else
             {
                 // Set placeholder colors.
-                Camera.main.backgroundColor = new Color(1, 0.6f, 0);
+                Camera.main.backgroundColor = new Color(0.9f, 0.9f, 0.9f);
 
                 foreach (var renderer in _bgObjects)
                     renderer.material.color = new Color(0, 0.5f, 0);
