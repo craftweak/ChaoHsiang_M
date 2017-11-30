@@ -161,7 +161,7 @@ PlayerSettings:
     serializedVersion: 2
     m_Bits: 238
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 
+  iOSTargetOSVersionString: 7.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 
@@ -232,7 +232,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 11e4f9157534bfc4d9ef7e35d1a68bad, type: 3}
+      m_Icon: {fileID: 2800000, guid: 26fdc6774e96b49edbc3357f5775c5ad, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching: []
